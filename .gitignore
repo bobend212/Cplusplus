@@ -1,32 +1,53 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main()
+{
+    //1. Wprowadz macierz 3x3 zaczynajac od pierwszego wiersza 1 kolumny nastepnie pierwszy wiersz 2 kolumny itd.
+    int tab[3][3]; // = {{-1,2,3}, {4,5,6}, {7,8,9}};
+    
+    cin>>tab[0][0]; cin>>tab[0][1]; cin>>tab[0][2]; 
+    cin>>tab[1][0]; cin>>tab[1][1]; cin>>tab[1][2];
+    cin>>tab[2][0]; cin>>tab[2][1]; cin>>tab[2][2];
+    
+    cout<<"| "<<tab[0][0]<<tab[0][1]<<tab[0][2]<<" |"<<endl;
+    cout<<"| "<<tab[1][0]<<tab[1][1]<<tab[1][2]<<" |"<<endl;
+    cout<<"| "<<tab[2][0]<<tab[2][1]<<tab[2][2]<<" |"<<endl;
+    
+    
+    
+    //wprowadzanie danych do meacierzy
+    //wyswietlenie meacierzy
+    //obliczenie i wyswietlenie wyznacznika metoda Sarusa
+    
+    
+    int a,b,c,d,e,f,h,g,i;
+    int p1,p2,p3,m1,m2,m3, sum;
+    
+    //cout<<tab[0][0]<<"tu jest wartosc 1x1"<<endl;
+    
+    a = tab[0][0];
+    b = tab[0][1];
+    c = tab[0][2];
+    d = tab[1][0];
+    e = tab[1][1];
+    f = tab[1][2];
+    g = tab[2][0];
+    h = tab[2][1];
+    i = tab[2][2];
+    
+    p1 = a*e*i;
+    p2 = b*f*g;
+    p3 = c*d*h;
+    m1 = g*e*c;
+    m2 = h*f*a;
+    m3 = i*d*b;
+    
+    sum = (p1+p2+p3)-(m1+m2+m3);
+    
+    cout<<sum;
+    
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+    return 0;
+}
