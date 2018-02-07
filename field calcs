@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void triangle(int);
+void square();
+void rectangle();
+void choose();
+
+int main()
+{
+    int num;;
+    cout<<"Calculation of the field of figures: (please choose a number)"<<endl;
+    cout<<"1. Triangle\n";
+    cout<<"2. Square\n";
+    cout<<"3. Rectangle\n";
+    
+    cin>>num;
+    //while (num==1)
+    switch (num)
+    {
+        case 1:
+        triangle(6);
+        break;
+        
+        case 2:
+        cout<<"gggggg";
+        break;
+        
+        
+        
+    }
+
+    return 0;
+}
+
+
+void triangle(int)
+{
+    cout<<endl<<"==TRIANGLE FIELD=="<<endl;
+    int a,h,t;
+    cout<<"length side a: ";
+    cin>>a;
+    cout<<"hight (h): ";
+    cin>>h;
+    
+    t = a*h/2;
+    
+    cout<<"Triangle field = "<<t;
+}
+
