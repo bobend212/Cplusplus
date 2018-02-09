@@ -1,1 +1,32 @@
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    float a,b,z;
+    
+    cout<<"<Calculator v1.0>\n\n";
+    
+    cout<<"1. Addition\n";
+    cout<<"2. Subtraction\n";
+    cout<<"3. Multiplication\n";
+    cout<<"4. Division\n";
+    cout<<"5. Residue from divide\n";
+    
+    cin>>z;
+    
+    if(z=1)
+    {
+        cout<<"++Addition++\n";
+        int w;
+        cout<<"number 1: ";
+        cin>>a;
+        cout<<"number 2: ";
+        cin>>b;
+        w = a+b;
+        cout<<"result = "<<w;
+    }
+
+    return 0;
+}
