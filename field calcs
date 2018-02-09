@@ -3,37 +3,43 @@
 using namespace std;
 
 void triangle(int);
-void square();
-void rectangle();
-void choose();
+void square(int);
+void rectangle(int);
 
 int main()
 {
     int num;;
-    cout<<"Calculation of the field of figures: (please choose a number)"<<endl;
+    cout<<"Calculation of the field selected figure: (please choose a number)"<<endl;
     cout<<"1. Triangle\n";
     cout<<"2. Square\n";
     cout<<"3. Rectangle\n";
     
+    do {
     cin>>num;
-    //while (num==1)
+    
     switch (num)
     {
         case 1:
         triangle(6);
+        cout<<endl;
+        cout<<"Choose another figure of type '0' to exit.\n";
         break;
-        
         case 2:
-        cout<<"gggggg";
+        square(6);
+        cout<<endl;
+        cout<<"Choose another figure of type '0' to exit.\n";
         break;
-        
-        
-        
+        case 3:
+        rectangle(6);
+        cout<<endl;
+        cout<<"Choose another figure of type '0' to exit.\n";
+        break;
     }
-
+    
+    } while(num);
+    
     return 0;
 }
-
 
 void triangle(int)
 {
@@ -46,6 +52,29 @@ void triangle(int)
     
     t = a*h/2;
     
-    cout<<"Triangle field = "<<t;
+    cout<<"result = "<<t;
 }
-
+void square(int)
+{
+    cout<<endl<<"==SQUARE FIELD=="<<endl;
+    int a,t;
+    cout<<"length side a: ";
+    cin>>a;
+    
+    t = a*a;
+    
+    cout<<"result = "<<t;
+}
+void rectangle(int)
+{
+    cout<<endl<<"==RECTANGLE FIELD=="<<endl;
+    int a,b,t;
+    cout<<"length side a: ";
+    cin>>a;
+    cout<<"length side b: ";
+    cin>>b;
+    
+    t = a*b;
+    
+    cout<<"result = "<<t;
+}
