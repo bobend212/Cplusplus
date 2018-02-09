@@ -22,19 +22,21 @@ int main()
         case 1:
         triangle(6);
         cout<<endl;
-        cout<<"Choose another figure of type '0' to exit.\n";
+        cout<<"Choose another figure or type '0' to exit.\n";
         break;
         case 2:
         square(6);
         cout<<endl;
-        cout<<"Choose another figure of type '0' to exit.\n";
+        cout<<"Choose another figure or type '0' to exit.\n";
         break;
         case 3:
         rectangle(6);
         cout<<endl;
-        cout<<"Choose another figure of type '0' to exit.\n";
+        cout<<"Choose another figure or type '0' to exit.\n";
         break;
     }
+    if (num>3)
+    cout<<"bad choose. 1 = triangle, 2 = square, 3 = rectangle\n";
     
     } while(num);
     
@@ -43,7 +45,7 @@ int main()
 
 void triangle(int)
 {
-    cout<<endl<<"==TRIANGLE FIELD=="<<endl;
+    cout<<"==TRIANGLE FIELD=="<<endl;
     int a,h,t;
     cout<<"length side a: ";
     cin>>a;
@@ -56,7 +58,7 @@ void triangle(int)
 }
 void square(int)
 {
-    cout<<endl<<"==SQUARE FIELD=="<<endl;
+    cout<<"==SQUARE FIELD=="<<endl;
     int a,t;
     cout<<"length side a: ";
     cin>>a;
@@ -67,7 +69,7 @@ void square(int)
 }
 void rectangle(int)
 {
-    cout<<endl<<"==RECTANGLE FIELD=="<<endl;
+    cout<<"==RECTANGLE FIELD=="<<endl;
     int a,b,t;
     cout<<"length side a: ";
     cin>>a;
