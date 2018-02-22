@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int minut, godzin, sekund;
+     
+     cout<<"Podaj liczbe sekund: ";
+     cin>>sekund;
+     
+     godzin = sekund/3600;  
+     minut = sekund%3600/60;
+     sekund = sekund%60; 
+    
+     
+     cout<<"godzin: "<<godzin<<endl;
+     cout<<"minut: "<<minut<<endl;
+     cout<<"sekund: "<<sekund;
+    
+    
+    return 0;
+}
+
+
+
+//// DODAC OBLICZANIE DNI I LAT
+
+///TUTAJ DNI I LATA DODANE
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int minut, godzin, sekund, dni, lat;
+     
+     cout<<"Podaj liczbe sekund: ";
+     cin>>sekund;
+     
+     lat = sekund/31536000;
+     dni = sekund%31536000/86400;
+     godzin = sekund%86400/3600;  
+     minut = sekund%3600/60;  
+     sekund = sekund%60; 
+    
+     cout<<"lat: "<<lat<<endl;
+     cout<<"dni: "<<dni<<endl;
+     cout<<"godzin: "<<godzin<<endl;
+     cout<<"minut: "<<minut<<endl;
+     cout<<"sekund: "<<sekund;
+    
+    return 0;
+}
