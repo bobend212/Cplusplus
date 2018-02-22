@@ -43,7 +43,7 @@ int main()
     cout<<"wskaznik BMI wynosi: "<<bmi<<" >> ";
     }
     
-    if (bmi <= 16)
+    if (bmi <= 16 && bmi >= 0.01)
     cout<<"wyglodzenie - jedz do babci."<<endl;
     else if (bmi > 16.01 && bmi <= 17)
     cout<<"wychudzenie - idz cos zjedz."<<endl;
@@ -57,7 +57,7 @@ int main()
     cout<<"I stopien otylosci - idz na rower."<<endl;
     else if (bmi > 35.01 && bmi <= 40)
     cout<<"II stopien otylosci - won na silownie!!"<<endl;
-    else  
+    else if (bmi > 40 && bmi <= 999)    
     cout<<"III stopien otylosci - McDonald twoim dom."<<endl;
     } while (wybor != 0);
     
