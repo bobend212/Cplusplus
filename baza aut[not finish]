@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Auto
+{
+  private:
+  string marka;
+  int rocznik;
+  float przebieg;
+  
+  public:
+  void dodaj();
+  void usun();
+  void wyswietl();
+};
+
+int main()
+{
+
+    return 0;
+}
